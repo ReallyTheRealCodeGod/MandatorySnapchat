@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "375948779918",
+    "project_id": "snapmandatory-d269f",
+    "storage_bucket": "snapmandatory-d269f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375948779918:android:102b98d7b90c7c597b84df",
+        "android_client_info": {
+          "package_name": "com.example.mandatorysnapchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375948779918-653jc7suucctiu60oq0t5g26h9ouue8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcVRBqxN9JiMhbudEMjMC-mVKLdQlgjTY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375948779918-653jc7suucctiu60oq0t5g26h9ouue8j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

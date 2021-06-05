@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MakeImageActivity">
+
+    <com.example.mandatorysnapchat.view.DrawingView
+        android:id="@+id/viewDraw"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY" />
+
+    <SeekBar
+        android:id="@+id/thickness"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewDraw"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#673AB7"
+        android:foregroundTint="#673AB7" />
+
+    <Button
+        android:id="@+id/erase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thickness"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="-3dp"
+        android:text="erase" />
+
+    <Button
+        android:id="@+id/draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/erase"
+        android:text="draw" />
+
+    <Button
+        android:id="@+id/addText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thickness"
+        android:layout_alignRight="@id/thickness"
+        android:backgroundTint="#2196F3"
+        android:onClick="textOnImageWhenButtonIsPressed"
+        android:shadowColor="#2196F3"
+        android:text="add text"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#2196F3"
+        android:textColorHint="#2196F3"
+        app:iconTint="#2196F3"
+        app:rippleColor="#2196F3"
+        app:strokeColor="#2196F3" />
+
+    <Button
+        android:id="@+id/sendToFirebase"
+        android:layout_width="196dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/draw"
+        android:layout_alignRight="@id/draw"
+        android:layout_marginRight="-108dp"
+        android:backgroundTint="#FF5E5E"
+        android:onClick="sendImgToFirebase"
+        android:text="Send to firebase" />
+
+    <EditText
+        android:id="@+id/addTextToImagePlainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thickness"
+        android:layout_toLeftOf="@id/addText"
+        android:layout_toEndOf="@id/erase"
+        android:backgroundTint="#2196F3"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:shadowColor="#2196F3"
+        android:text="text to image"
+        android:textColor="#2196F3" />
+
+    <Button
+        android:id="@+id/changeTitleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addText"
+        android:layout_alignStart="@id/addText"
+        android:layout_toRightOf="@id/draw"
+        android:backgroundTint="#4CAF50"
+        android:onClick="changeTitleButton"
+        android:text="title" />
+
+    <EditText
+        android:id="@+id/changeTitlePlainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addTextToImagePlainText"
+        android:layout_toRightOf="@id/draw"
+        android:backgroundTint="#4CAF50"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:shadowColor="#4CAF50"
+        android:text="Change title"
+        android:textColor="#4CAF50" />
+
+</RelativeLayout>
